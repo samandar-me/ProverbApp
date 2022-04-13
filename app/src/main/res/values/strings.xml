@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Maqollar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prove">Maqollar</string>
+    <string name="_1">1</string>
+    <string name="test">Men Namangandan Ismim Ibrohim. 97-yilman. PDP academy da õqishga bormoqchiman. Lekin avval kvartirani hal qilishim kerak edi. Gruppada õqib qolgandim. Kvartira bormi?</string>
+    <string name="lan">Til - Dil kaliti</string>
+    <string name="saved">Saqlanganlar</string>
+    <string name="settings">Sozlamalar</string>
+    <string name="todo">todo</string>
+    <string name="copy">Nusxalandi</string>
+    <string name="saved_data">Saqlandi</string>
+    <string name="deleted">Saqlanganlardan o`chirildi</string>
+    <string name="nothing">Saqlanganlar yo\'q</string>
+    <string name="are_you">Saqlanganlarni o\'chirmoqchimisiz?</string>
+    <string name="deleted_all">Hamma maqollar o\'chirildi</string>
+    <string name="yoq">Yo\'q</string>
+    <string name="ha">Ha</string>
+    <string name="share">Do\'stlar bilan ulashish</string>
+    <string name="rate">Ilovani baholash</string>
+    <string name="telegram">Telegram</string>
+    <string name="theme">Maqollar mavzusi</string>
+    <string name="app_th">Ilova mavzusi</string>
+    <string name="maq">Maqollar To\'plami</string>
+    <string name="all">"Barcha mavzularga oid eng sara o’zbek va jahon xalq maqollari to’plami"</string>
+</resources>
