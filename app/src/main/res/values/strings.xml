@@ -24,4 +24,9 @@
     <string name="app_th">Ilova mavzusi</string>
     <string name="maq">Maqollar To\'plami</string>
     <string name="all">"Barcha mavzularga oid eng sara o’zbek va jahon xalq maqollari to’plami"</string>
+    <string name="search">Qidiring..</string>
+    <string name="not">Hech narsa topilmadi.</string>
+
+    <string name="banner_ads">ca-app-pub-2942733085232967/5879658235</string>
+    <string name="interstitial_ad">ca-app-pub-2942733085232967/1557269845</string>
 </resources>

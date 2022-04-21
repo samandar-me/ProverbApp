@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.DetailFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -14,39 +16,130 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="wrap_content"
-                    android:padding="5dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_keyboard_backspace_24"
-                    android:id="@+id/backBtn"/>
+                <LinearLayout
+                    android:id="@+id/linearProverb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
 
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/toolBarText"
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/carter_one"
-                    android:text="@string/prove"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    app:fontFamily="@font/carter_one" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/backBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_keyboard_backspace_24" />
 
-            </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/toolBarText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/carter_one"
+                        android:maxLines="1"
+                        android:text="@string/prove"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/carter_one" />
+
+                    <ImageView
+                        android:id="@+id/btnSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="20dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_baseline_search_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:backgroundTint="@color/white"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_baseline_search_24"
+                        android:drawablePadding="15dp"
+                        android:focusable="true"
+                        android:fontFamily="@font/carter_one"
+                        android:hint="@string/search"
+                        android:textColor="#fff"
+                        android:textColorHint="@color/light_gray"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
 
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/linearNotFound"
+            android:visibility="gone"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageNotFound"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/remove_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not"
+                android:layout_gravity="center"
+                android:textColor="@color/light_gray"
+                android:textSize="22sp"
+                android:fontFamily="@font/carter_one"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ads" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

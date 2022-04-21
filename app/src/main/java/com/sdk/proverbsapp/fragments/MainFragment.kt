@@ -9,8 +9,9 @@ import androidx.viewpager2.widget.ViewPager2
 import com.sdk.proverbsapp.R
 import com.sdk.proverbsapp.adapter.ViewPagerAdapter
 import com.sdk.proverbsapp.databinding.FragmentMainBinding
+import com.sdk.proverbsapp.util.toast
 
-class MainFragment : Fragment() {
+class MainFragment : Fragment(), ProverbsFragment.ItemClickListener {
 
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
@@ -48,6 +49,10 @@ class MainFragment : Fragment() {
                 binding.bottomNav.menu.getItem(position).isChecked = true
             }
         })
+    }
+
+    override fun clicked() {
+        toast("main Fragment")
     }
 
     override fun onDestroy() {

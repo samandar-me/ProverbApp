@@ -21,6 +21,7 @@ object ObjectLists {
             Proverb(0, "Ehtiyotkorlik va Ehtiyotziklik"),
             Proverb(0, "Farovonlik va Yetishmovchilik"),
             Proverb(0, "Imkon va Imkonsizlik"),
+            Proverb(0, "Vaqt va Fursat"),
             Proverb(0, "Taqdir va Tadbir"),
             Proverb(0, "Ma'sulyat va Ma'sulyatsizlik"),
             Proverb(0, "Foyda va Zarar"),
@@ -28,6 +29,7 @@ object ObjectLists {
             Proverb(0, "Me'yor va Me'yorsizlik"),
             Proverb(0, "Reja va Rejasizlik"),
             Proverb(0, "Ehtiyoj va Zaruriyat"),
+            Proverb(0, "Nasiya va Naqd"),
             Proverb(0, "Tejamkorlik va Isrofgarchilik"),
             Proverb(0, "Rizq va Nasiba"),
             Proverb(0, "Samaradorlik va Besamarlik"),
@@ -37,8 +39,14 @@ object ObjectLists {
         )
     }
 
-    fun tilHaq(): List<Proverb> {
-        return listOf(
+    fun tez(): ArrayList<Proverb> {
+        return arrayListOf(
+            Proverb(0,"Tez orada yuklaymiz!")
+        )
+    }
+
+    fun tilHaq(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0,
                 "Til - shuncha sharafi bilan nutqning qurolidir. Agar nutq no'maqul bo'lib chiqsa - tilning ofatidir. (Alisher Navoiy)"
@@ -351,8 +359,8 @@ object ObjectLists {
         )
     }
 
-    fun amalDin(): List<Proverb> {
-        return listOf(
+    fun amalDin(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0,
                 "Ey do'st, darding nima bo'lsa bo'lsin, Umiding har zamon Alloh bo'lsin. (Jaloliddin Rumiy)"
@@ -780,8 +788,8 @@ object ObjectLists {
         )
     }
 
-    fun faqBoy(): List<Proverb> {
-        return listOf(
+    fun faqBoy(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0,
                 "Boy odamlarning eng katta siri shundaki, ular boylik nima bilan o'lchanishini bilishadi. Boylik pul bilan o'lchanmaydi, boylik vaqt bilan o'lchanadi. (Robert Kiyosaki)"
@@ -1129,8 +1137,8 @@ object ObjectLists {
         )
     }
 
-    fun yilFas(): List<Proverb> {
-        return listOf(
+    fun yilFas(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "Toqqa yog‘sa, cho‘l obod,\n" +
                         "Cho‘lga yog‘sa, el obod"
@@ -1517,8 +1525,8 @@ object ObjectLists {
         )
     }
 
-    fun hayQuw(): List<Proverb> {
-        return listOf(
+    fun hayQuw(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "Qushlar va hayvonlar haqida eng\n" +
                         "sara maqollar to‘plami. «Hayvonlar\n" +
@@ -1631,8 +1639,8 @@ object ObjectLists {
         )
     }
 
-    fun yolYol(): List<Proverb> {
-        return listOf(
+    fun yolYol(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "Yo‘ldosh va yo‘l haqida eng sara\n" +
                         "maqollar to‘plami. «Men izlaganim\n" +
@@ -1770,8 +1778,8 @@ object ObjectLists {
         )
     }
 
-    fun yosKek(): List<Proverb> {
-        return listOf(
+    fun yosKek(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "Yoshlik va qarilik haqida eng sara\n" +
                         "maqollar to‘plami. «Yoshlik\n" +
@@ -2019,8 +2027,8 @@ object ObjectLists {
         )
     }
 
-    fun toyMot(): List<Proverb> {
-        return listOf(
+    fun toyMot(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "To‘y va motam haqida eng sara\n" +
                         "maqollar to‘plami. «To‘y qilish\n" +

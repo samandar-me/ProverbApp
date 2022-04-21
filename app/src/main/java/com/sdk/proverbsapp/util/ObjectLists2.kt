@@ -4,8 +4,8 @@ import com.sdk.proverbsapp.model.Proverb
 
 object ObjectLists2 {
 
-    fun sevGam(): List<Proverb> {
-        return listOf(
+    fun sevGam(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "G‘am va sevinch haqida eng sara\n" +
                         "maqollar to‘plami. «Yaxshilik va\n" +
@@ -127,8 +127,8 @@ object ObjectLists2 {
         )
     }
 
-    fun corDeh(): List<Proverb> {
-        return listOf(
+    fun corDeh(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "Chorvachilik va dehqonchilik\n" +
                         "haqida eng sara maqollar to‘plami.\n" +
@@ -599,8 +599,8 @@ object ObjectLists2 {
         )
     }
 
-    fun sogToz(): List<Proverb> {
-        return listOf(
+    fun sogToz(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(
                 0, "Tozalik, bemorlik va Sog‘lik haqida\n" +
                         "eng sara maqollar to‘plami.\n" +
@@ -850,8 +850,8 @@ object ObjectLists2 {
             Proverb(0, "Dard filni pashshadek qilar")
         )
     }
-    fun mamAf(): List<Proverb> {
-        return listOf(
+    fun mamAf(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(0,"Mamnunlik va Afsuslanish haqida\n" +
                     "eng sara maqollar to‘plami.\n" +
                     "«G‘azab vaqtidagi ozgina sabr,\n" +
@@ -956,8 +956,8 @@ object ObjectLists2 {
                     "mumkin")
         )
     }
-    fun ehEh(): List<Proverb> {
-        return listOf(
+    fun ehEh(): ArrayList<Proverb> {
+        return arrayListOf(
             Proverb(0,"Ehtiyotkorlik va ehtiyotsizlik haqida\n" +
                     "eng sara maqollar to‘plami.\n" +
                     "«Saltanat ishlarida to‘rt narsaga\n" +
@@ -1531,6 +1531,215 @@ object ObjectLists2 {
             Proverb(0,"Aytilmagan so‘zni ayttirib bo‘lar,\n" +
                     "Aytilgan so‘zni qaytarib bo‘lmas."),
             Proverb(0,"Aytgan so‘zni yutib bo‘lmas")
+        )
+    }
+    fun farYet(): ArrayList<Proverb> {
+        return arrayListOf(
+            Proverb(0,"Farovonlik va yetishmovchilik\n" +
+                    "haqida eng sara maqollar to‘plami.\n" +
+                    "«Baxt yaxshi kayfiyat, farovonlik,\n" +
+                    "uyg‘unlik, mutanosiblik va\n" +
+                    "vazminlikdir» (Demokrit)."),
+            Proverb(0,"Och otasini bilmas,\n" +
+                    "To‘q to‘g‘ralgan etni yemas."),
+            Proverb(0,"Akangda bo‘lsa, so‘raysan,\n" +
+                    "Uyingda bo‘lsa, yalaysan."),
+            Proverb(0,"Egachili qizga to‘y qayda,\n" +
+                    "Echkili qo‘yga suv qayda."),
+            Proverb(0,"Loydan holva ajratib bo‘lmas."),
+            Proverb(0,"Har supraning noni boshqa."),
+            Proverb(0,"Bor o‘xshatar,\n" +
+                    "Yo‘q qaqshatar"),
+            Proverb(0,"El to‘q — sen to‘q."),
+            Proverb(0,"Och urishqoq kelar"),
+            Proverb(0,"Ot topilguncha oyoq ham ulov"),
+            Proverb(0,"Oti bor — botir,\n" +
+                    "Oti yo‘q — yotir."),
+            Proverb(0,"Ignaning chizig‘i bor,\n" +
+                    "Ipning — uzugi."),
+            Proverb(0,"Osmon — yiroq, yer — qattiq."),
+            Proverb(0,"Qarz etma birovdan,\n" +
+                    "Qutilmaysan ingrovdan."),
+            Proverb(0,"Eldan tomgani — yomg‘ir yoqqani."),
+            Proverb(0,"Bir tariqdan\n" +
+                    "bo‘tqa bo‘lmas"),
+            Proverb(0,"Yo‘g‘on cho‘zilar,\n" +
+                    "Ingichka uzilar."),
+            Proverb(0,"Buxoroda moli borning ko‘ngli to‘q."),
+            Proverb(0,"Qo‘rada ko‘rsam, ko‘nglim to‘q"),
+            Proverb(0,"Otliqqa yayov yetolmas,\n" +
+                    "Ikkovga birov botolmas."),
+            Proverb(0,"Bor qarindosh — qarindosh,\n" +
+                    "Yo‘q qarindosh — ziyondosh."),
+            Proverb(0,"Umrim umr bo‘ldi,\n" +
+                    "Soqolim ko‘mir bo‘ldi."),
+            Proverb(0,"Birdan ikki yaxshi,\n" +
+                    "Ikkidan uch yaxshi."),
+            Proverb(0,"To‘kinning do‘ppisi kam."),
+            Proverb(0,"Bir qishga quyon chorig‘i ham\n" +
+                    "chidar."),
+            Proverb(0,"Bor — so‘yilar,\n" +
+                    "Yo‘q — o‘yilar"),
+            Proverb(0,"Qanotsiz qush uchmas,\n" +
+                    "Suvsiz tegirmon yurmas."),
+            Proverb(0,"Har idish o‘z ichidagini to‘kar."),
+            Proverb(0,"Erda bo‘lsa, yo‘rg‘alaydi xotin,\n" +
+                    "Erda bo‘lmasa, nima qiladi xotin."),
+            Proverb(0,"Botqoqning kengligi qurbaqaga\n" +
+                    "yaxshi."),
+            Proverb(0,"Oqlik bo‘lsa, ochlik yo‘q"),
+            Proverb(0,"Et ko‘rmaganga o‘pka tansiq."),
+            Proverb(0,"Bir tovuqqa ham don kerak, ham\n" +
+                    "suv."),
+            Proverb(0,"Borlik\n" +
+                    "yarashtirar,\n" +
+                    "yo‘qlik\n" +
+                    "qarashtirar"),
+            Proverb(0,"Arpa yegan ot o‘ynar,\n" +
+                    "Makka yegan tot o‘ynar."),
+            Proverb(0,"Qoqqani qozig‘i yo‘q,\n" +
+                    "Egani — ozig‘i."),
+            Proverb(0,"Igna o‘tgan joydan ip ham o‘tar"),
+            Proverb(0,"Oldingda yetakching bo‘lsin,\n" +
+                    "Orqangda — tayanching."),
+            Proverb(0,"Unida bo‘lsa, urvog‘iga tatir"),
+            Proverb(0,"Yo‘qni yo‘ndirib bo‘lmas,\n" +
+                    "Qushni — qo‘ndirib."),
+            Proverb(0,"Senda bo‘lsa, elga o‘tar,\n" +
+                    "Elda bo‘lsa — senga."),
+            Proverb(0,"O‘zbekka osh yaxshi,\n" +
+                    "Qozoqqa — go‘sht."),
+            Proverb(0,"Oyog‘i katta topganini kiyar,\n" +
+                    "Oyog‘i kichik — istaganini."),
+            Proverb(0,"Zo‘rayganga xudo berar,\n" +
+                    "So‘m temirga — bolg‘a."),
+            Proverb(0,"Tilanganning to‘rvasi to‘lmas."),
+            Proverb(0,"Xolamning oshini shirin qilgan\n" +
+                    "Pochchamning go‘shti."),
+            Proverb(0,"Qora qozon qaynab tursa,\n" +
+                    "Qizilo‘ngach kuyib qolmas"),
+            Proverb(0,"Qo‘y bo‘lmasa, qiy bo‘lmas"),
+            Proverb(0,"Moy aynisa, tuz solar,\n" +
+                    "Tuz aynisa, ne solar."),
+            Proverb(0,"Yo‘qchilik mard qo‘lini bog‘lar."),
+            Proverb(0,"Maqtanishga musofirchilik yaxshi."),
+            Proverb(0,"Bermasa ham boy yaxshi,\n" +
+                    "Emasang ham moy yaxshi."),
+            Proverb(0,"Ot bitdi — qanot bitdi."),
+            Proverb(0,"Igna o‘z teshigini tikolmas.\n"),
+            Proverb(0,"Uydagilar ozmidi,\n" +
+                    "Ozmon eshikdan keldi."),
+            Proverb(0,"Ovchiga go‘sht qahat emas,\n" +
+                    "O‘g‘riga — mol."),
+            Proverb(0,"Olma tagidan yiroqqa tushmas."),
+            Proverb(0,"Kichik kalit katta uyni ochar."),
+            Proverb(0,"Don to‘kis — chorva to‘kis,\n" +
+                    "Chorva to‘kis — el-yurt to‘kis."),
+            Proverb(0,"Ignaning ishini nayza qilolmas."),
+            Proverb(0,"Boy bo‘lib boltasi yo‘q,\n" +
+                    "Gadoy bo‘lib — xaltasi."),
+            Proverb(0,"Hamyonga boq, nog‘ora qoq"),
+            Proverb(0,"Borning bor degani — botmon."),
+            Proverb(0,"It ham o‘z ko‘chasida o‘zini sher\n" +
+                    "bilar."),
+            Proverb(0,"Borning olasi ko‘p,\n" +
+                    "Yo‘qning — berasi."),
+            Proverb(0,"Og‘riq joyini topsa,\n" +
+                    "Olti oy qishlar."),
+            Proverb(0,"Yo‘g‘onni yo‘nib ye,\n" +
+                    "Ingichkani cho‘zib ye."),
+            Proverb(0,"Qorni to‘qning qayg‘usi yo‘q."),
+            Proverb(0,"O‘zingda bo‘lsa, oshaysan,\n" +
+                    "Qo‘shningda bo‘lsa, tilaysan."),
+            Proverb(0,"O‘zingda bo‘lsa, kunda yersan,\n" +
+                    "Kishida bo‘lsa — bir kunda."),
+            Proverb(0,"O‘tning quyug‘i\n" +
+                    "suvning tinig‘i"),
+            Proverb(0,"Ariq to‘ymasa, baliq to‘ymas."),
+            Proverb(0,"Bor — baqirar,\n" +
+                    "Yo‘q — chaqirar."),
+            Proverb(0,"Har to‘kisda — bir ayb"),
+            Proverb(0,"Gado to‘ydi — qayqaydi."),
+            Proverb(0,"Qozonda bo‘lsa, cho‘michga\n" +
+                    "chiqar."),
+            Proverb(0,"Bor maqtansa, yarashar,\n" +
+                    "Yo‘q maqtansa, adashar."),
+            Proverb(0,"Balig‘i yo‘q ko‘li qursin,\n" +
+                    "Kiyigi yo‘q cho‘li qursin."),
+            Proverb(0,"Er to‘ygani — el to‘ygani."),
+            Proverb(0,"To‘q yomon emas, yo‘q yomon."),
+            Proverb(0,"Igna bilan quduq qazib bo‘lmas."),
+            Proverb(0,"Bor belgisi osh bilan."),
+            Proverb(0,"Ot bo‘lmasang, nima qilasan\n" +
+                    "kishnab,\n" +
+                    "Eshak bo‘lmasang, nima qilasan\n" +
+                    "hangrab."),
+            Proverb(0,"Ko‘zing borida ko‘rib qol,\n" +
+                    "Oyog‘ing borida yurib qol."),
+            Proverb(0,"Oti borning qanoti bor,\n" +
+                    "Moli borning — baxti."),
+            Proverb(0,"Mollining moli o‘lar,\n" +
+                    "Molsizning nesi o‘lar."),
+            Proverb(0,"Bor bolasiga yetti osh berar"),
+            Proverb(0,"Bozorda birov baxtini sotar,\n" +
+                    "Birov — raxtini."),
+            Proverb(0,"Qo‘ldan\n" +
+                    "berganga qush\n" +
+                    "to‘ymas"),
+            Proverb(0,"Borning bolasi mol deb turar,\n" +
+                    "Yo‘qning bolasi — non."),
+            Proverb(0,"Qul ering bo‘lsin,\n" +
+                    "Quymoq — yemishing.\n"),
+            Proverb(0,"Ko‘rpangga qarab oyoq uzat"),
+            Proverb(0,"Et bo‘lmasa — sho‘rva."),
+            Proverb(0,"Musofirga qiz berma,\n" +
+                    "Shahri — ikki,\n" +
+                    "ko‘ngli — ikki"),
+            Proverb(0,"Bor — bilimtoy,\n" +
+                    "Yo‘q — horimtoy"),
+            Proverb(0,"Ozgan ot arg‘umoq bo‘lmas."),
+            Proverb(0,"Bor bor, desa — topilar,\n" +
+                    "Yo‘q bor, desa — chopilar."),
+            Proverb(0,"Oqlik bor joyda og‘riq bo‘lmas."),
+            Proverb(0,"Og‘riq ko‘paysa, emchi ko‘payar."),
+            Proverb(0,"Ot bo‘lsa, maydon topilar,\n" +
+                    "Ot bo‘lmasa, maydon chopilar."),
+            Proverb(0,"O‘zingda yo‘q — olamda yo‘q."),
+            Proverb(0,"Yalang‘och yetolgan kun esdan\n" +
+                    "chiqar,\n" +
+                    "Och to‘ygan kun esdan chiqar."),
+            Proverb(0,"Ot — sag‘ridan, qo‘y — bag‘ridan."),
+            Proverb(0,"Yo‘qqa yugruk yetolmas."),
+            Proverb(0,"Borlik yumush keltirar,\n" +
+                    "Yo‘qlik — urush."),
+            Proverb(0,"Har supradan bir kulcha"),
+            Proverb(0,"Bor yarashtiradi,\n" +
+                    "Yo‘q talashtiradi"),
+            Proverb(0,"Uyga uy bo‘yi uysang ham oz"),
+            Proverb(0,"Tushlik umring bo‘lsa, choshlik\n" +
+                    "harakat qil."),
+            Proverb(0,"Borning boshi og‘rir,\n" +
+                    "Yo‘qning — qorni."),
+            Proverb(0,"Iyirli yerda ot o‘lmas"),
+            Proverb(0,"Faqir bo‘lsang, baxmal kiy."),
+            Proverb(0,"Mushukka qanot bitsa,\n" +
+                    "Sichqon zoti quriydi."),
+            Proverb(0,"Uydagilar yetmas edi,\n" +
+                    "Tuynukdan tushdi kar balo"),
+            Proverb(0,"Sigir yo‘g‘ida echki ham sigir"),
+            Proverb(0,"Dunyoning ishi — miri kam ikki."),
+            Proverb(0,"Temirchidan ko‘mir so‘rama."),
+            Proverb(0,"O‘n oylik o‘zdirar,\n" +
+                    "To‘qqiz oylik to‘ydirar."),
+            Proverb(0,"Uying kapa bo‘lsin,\n" +
+                    "Noning katta bo‘lsin."),
+            Proverb(0,"El ulog‘i — ellik."),
+            Proverb(0,"Mushuk yo‘g‘ida sichqon tepaga\n" +
+                    "chiqar."),
+            Proverb(0,"Hamma choy — bir yoq,\n" +
+                    "Shamma choy — bir yoq."),
+            Proverb(0,"Sizni ushbu maqola qiziqtirishi\n" +
+                    "mumkin")
         )
     }
 }

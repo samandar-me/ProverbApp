@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     tools:context=".fragments.FavoriteFragment">
 
@@ -68,7 +69,7 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:alpha="0.5"
+                android:alpha="0.8"
                 android:scaleType="centerCrop"
                 android:src="@drawable/img_emp1" />
 
@@ -83,5 +84,13 @@
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ads" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

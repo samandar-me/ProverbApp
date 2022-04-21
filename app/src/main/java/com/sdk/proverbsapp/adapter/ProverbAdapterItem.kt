@@ -14,9 +14,10 @@ import com.sdk.proverbsapp.databinding.ItemLayout2Binding
 import com.sdk.proverbsapp.manager.SharedPrefManager
 import com.sdk.proverbsapp.model.Proverb
 
+@SuppressLint("NotifyDataSetChanged")
 class ProverbAdapterItem(
     private val context: Context,
-    private var proverbList: List<Proverb>,
+    private var proverbList: ArrayList<Proverb>,
     private val onClickSave: (Proverb) -> Unit,
     private val onClickCopy: (Proverb) -> Unit
 ) :
@@ -66,4 +67,9 @@ class ProverbAdapterItem(
 
     inner class ProverbViewHolder(val binding: ItemLayout2Binding) :
         RecyclerView.ViewHolder(binding.root)
+
+    fun filterList(filteredList: ArrayList<Proverb>) {
+        proverbList = filteredList
+        notifyDataSetChanged()
+    }
 }

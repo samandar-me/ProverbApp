@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.crowdfire.cfalertdialog.CFAlertDialog
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.sdk.proverbsapp.R
 import com.sdk.proverbsapp.adapter.FavoriteAdapter
 import com.sdk.proverbsapp.database.ProverbDatabase
@@ -38,7 +40,7 @@ class FavoriteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViews()
-
+        admob()
     }
 
     private fun initViews() {
@@ -95,6 +97,12 @@ class FavoriteFragment : Fragment() {
                 dialog.dismiss()
             }
         alertDialog.show()
+    }
+
+    private fun admob() {
+        MobileAds.initialize(requireContext()) {}
+        val adRequest = AdRequest.Builder().build()
+        binding.admob.loadAd(adRequest)
     }
 
     private fun copyProverb(proverb: Proverb) {

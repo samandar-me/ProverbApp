@@ -17,9 +17,6 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
-        <action
-            android:id="@+id/action_mainFragment_to_proverbsFragment"
-            app:destination="@id/proverbsFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -30,5 +27,9 @@
         android:id="@+id/proverbsFragment"
         android:name="com.sdk.proverbsapp.fragments.ProverbsFragment"
         android:label="fragment_proverbs"
-        tools:layout="@layout/fragment_proverbs" />
+        tools:layout="@layout/fragment_proverbs">
+        <action
+            android:id="@+id/action_proverbsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
 </navigation>
