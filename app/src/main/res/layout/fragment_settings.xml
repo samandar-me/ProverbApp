@@ -34,177 +34,183 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/carter_one"
-            android:text="@string/theme"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="15dp"
-            android:gravity="center">
-
-            <at.markushi.ui.CircleButton
-                android:id="@+id/btn1"
-                android:layout_width="50dp"
-                android:layout_height="50dip"
-                android:layout_marginHorizontal="5dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:cb_color="@color/color1"
-                app:cb_pressedRingWidth="4dip" />
-
-            <at.markushi.ui.CircleButton
-                android:id="@+id/btn2"
-                android:layout_width="50dp"
-                android:layout_height="50dip"
-                android:layout_marginHorizontal="5dp"
-                app:cb_color="@color/color2"
-                app:cb_pressedRingWidth="4dip" />
-
-            <at.markushi.ui.CircleButton
-                android:id="@+id/btn3"
-                android:layout_width="50dp"
-                android:layout_height="50dip"
-                android:layout_marginHorizontal="5dp"
-                app:cb_color="@color/dark_blue"
-                app:cb_pressedRingWidth="4dip" />
-
-            <at.markushi.ui.CircleButton
-                android:id="@+id/btn4"
-                android:layout_width="50dp"
-                android:layout_height="50dip"
-                android:layout_marginHorizontal="5dp"
-                app:cb_color="@color/color4"
-                app:cb_pressedRingWidth="4dip" />
-
-            <at.markushi.ui.CircleButton
-                android:id="@+id/btn5"
-                android:layout_width="50dp"
-                android:layout_height="50dip"
-                android:layout_marginHorizontal="5dp"
-                app:cb_color="@color/light_gray3"
-                app:cb_pressedRingWidth="4dip" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/carter_one"
-                android:text="@string/app_th"
+                android:text="@string/theme"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
-            <com.github.angads25.toggle.widget.DayNightSwitch
-                android:id="@+id/switchBtn"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp" />
+                android:layout_margin="15dp"
+                android:gravity="center">
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/btn1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dip"
+                    android:layout_marginHorizontal="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cb_color="@color/color1"
+                    app:cb_pressedRingWidth="4dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/btn2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dip"
+                    android:layout_marginHorizontal="5dp"
+                    app:cb_color="@color/color2"
+                    app:cb_pressedRingWidth="4dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/btn3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dip"
+                    android:layout_marginHorizontal="5dp"
+                    app:cb_color="@color/dark_blue"
+                    app:cb_pressedRingWidth="4dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/btn4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dip"
+                    android:layout_marginHorizontal="5dp"
+                    app:cb_color="@color/color4"
+                    app:cb_pressedRingWidth="4dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/btn5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dip"
+                    android:layout_marginHorizontal="5dp"
+                    app:cb_color="@color/light_gray3"
+                    app:cb_pressedRingWidth="4dip" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/linearSharing"
-                    android:layout_width="match_parent"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/carter_one"
+                    android:text="@string/app_th"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/sharing" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:fontFamily="@font/carter_one"
-                        android:text="@string/share"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
+                <com.github.angads25.toggle.widget.DayNightSwitch
+                    android:id="@+id/switchBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp" />
 
                 <LinearLayout
-                    android:id="@+id/linearRate"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical">
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/rate" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/linearSharing"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:fontFamily="@font/carter_one"
-                        android:text="@string/rate"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/sharing" />
 
-                <LinearLayout
-                    android:id="@+id/linearTel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/carter_one"
+                            android:text="@string/share"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/send" />
+                    </LinearLayout>
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/linearRate"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:fontFamily="@font/carter_one"
-                        android:text="@string/telegram"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/rate" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/carter_one"
+                            android:text="@string/rate"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/send" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/carter_one"
+                            android:text="@string/telegram"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -212,7 +218,7 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/admob"

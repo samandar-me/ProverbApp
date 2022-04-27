@@ -1,10 +1,7 @@
 package com.sdk.proverbsapp.manager
 
 import com.sdk.proverbsapp.model.Proverb
-import com.sdk.proverbsapp.util.ObjectLists3
-import com.sdk.proverbsapp.util.ObjectLists
-import com.sdk.proverbsapp.util.ObjectLists2
-import com.sdk.proverbsapp.util.Utils
+import com.sdk.proverbsapp.util.*
 
 class ListManager {
     fun getList(): ArrayList<Proverb> {
@@ -33,12 +30,12 @@ class ListManager {
             21 -> ObjectLists3.rejRej()
             22 -> ObjectLists3.zarEht()
             23 -> ObjectLists3.naqNas()
-            24 -> ObjectLists.tez()
-            25 -> ObjectLists.tez()
-            26 -> ObjectLists.tez()
-            27 -> ObjectLists.tez()
-            28 -> ObjectLists.tez()
-            29 -> ObjectLists.tez()
+            24 -> ObjectLists4.tejIsr()
+            25 -> ObjectLists4.rizNa()
+            26 -> ObjectLists4.samBe()
+            27 -> ObjectLists4.bahNat()
+            28 -> ObjectLists4.farFar()
+            29 -> ObjectLists4.andAnd()
             else -> ObjectLists.tez()
         }
     }

@@ -126,13 +126,16 @@ class SettingsFragment : Fragment() {
     }
 
     private fun intentToPlayMarket() {
-
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.sdk.proverbsapp")
+        val intentChooser = Intent.createChooser(intent, "Launch Play Market")
+        startActivity(intentChooser)
     }
 
     private fun shareThisApp() {
         val intent = Intent(Intent.ACTION_SEND)
         intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.share))
+        intent.putExtra(Intent.EXTRA_SUBJECT, "https://play.google.com/store/apps/details?id=com.sdk.proverbsapp")
         startActivity(Intent.createChooser(intent, "Share Via"))
     }
 

@@ -28,7 +28,7 @@
                 android:fontFamily="@font/carter_one"
                 android:text="@string/_1"
                 android:textColor="@color/white"
-                android:textSize="27sp" />
+                android:textSize="24sp" />
 
         </LinearLayout>
 
