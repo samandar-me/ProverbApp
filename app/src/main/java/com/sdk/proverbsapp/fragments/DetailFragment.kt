@@ -11,7 +11,10 @@ import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.activity.OnBackPressedCallback
 import androidx.core.view.isVisible
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -52,27 +55,14 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initViews()
+        initViews(view)
         loadInterstitalAd()
         admob()
+        showInterstitialAd()
         admobBig()
     }
 
-    private fun initViews() {
-        activity?.onBackPressedDispatcher?.addCallback(object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                if (isBack) {
-                    binding.linearSearch.isVisible = false
-                    binding.linearProverb.isVisible = true
-                    binding.linearNotFound.isVisible = false
-                    binding.edtSearch.text?.clear()
-                    isBack = false
-                } else {
-                    findNavController().popBackStack()
-                    showInterstitialAd()
-                }
-            }
-        })
+    private fun initViews(view: View) {
 
         listManager = ListManager()
         proverbDatabase = ProverbDatabase.getInstance(requireContext())
@@ -107,6 +97,9 @@ class DetailFragment : Fragment() {
                 hideKeyboard(requireActivity(), binding.edtSearch)
             }
         })
+        binding.btnClose.setOnClickListener {
+            binding.edtSearch.text?.clear()
+        }
     }
 
     private fun admob() {
@@ -116,15 +109,10 @@ class DetailFragment : Fragment() {
     }
 
     private fun editText() {
-        binding.edtSearch.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
-
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                proverbSearch(p0.toString().trim().lowercase())
-            }
-
-            override fun afterTextChanged(p0: Editable?) {}
-        })
+        binding.edtSearch.addTextChangedListener {
+            proverbSearch(it.toString().trim().lowercase())
+            binding.btnClose.isVisible = binding.edtSearch.text.toString().trim().isNotEmpty()
+        }
     }
 
     private fun proverbSearch(text: String) {
@@ -175,7 +163,9 @@ class DetailFragment : Fragment() {
 
     private fun loadInterstitalAd() {
         val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(requireContext(), resources.getString(R.string.interstitial_ad), adRequest,
+        InterstitialAd.load(requireContext(),
+            resources.getString(R.string.interstitial_ad),
+            adRequest,
             object : InterstitialAdLoadCallback() {
                 override fun onAdLoaded(p0: InterstitialAd) {
                     super.onAdLoaded(p0)
@@ -209,8 +199,9 @@ class DetailFragment : Fragment() {
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
+        isBack = !isBack
     }
 }

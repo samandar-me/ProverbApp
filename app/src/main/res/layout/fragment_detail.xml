@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.DetailFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -71,7 +71,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:inputType="text"
                         android:backgroundTint="@color/white"
                         android:clickable="true"
                         android:drawableStart="@drawable/ic_baseline_search_24"
@@ -79,11 +78,22 @@
                         android:focusable="true"
                         android:fontFamily="@font/carter_one"
                         android:hint="@string/search"
+                        android:inputType="text"
                         android:textColor="#fff"
                         android:textColorHint="@color/light_gray"
                         android:textSize="18sp" />
 
                 </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btnClose"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/dark_blue"
+                    android:src="@drawable/ic_baseline_close_24" />
 
             </FrameLayout>
 
@@ -102,12 +112,12 @@
             android:layout_height="match_parent" />
 
         <LinearLayout
+            android:id="@+id/linearNotFound"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
-            android:id="@+id/linearNotFound"
-            android:visibility="gone"
             android:orientation="vertical"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,11 +133,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/not"
                 android:layout_gravity="center"
+                android:fontFamily="@font/carter_one"
+                android:text="@string/not"
                 android:textColor="@color/light_gray"
-                android:textSize="22sp"
-                android:fontFamily="@font/carter_one"/>
+                android:textSize="22sp" />
 
         </LinearLayout>
 

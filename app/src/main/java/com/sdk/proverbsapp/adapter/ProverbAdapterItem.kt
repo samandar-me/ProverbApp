@@ -2,11 +2,8 @@ package com.sdk.proverbsapp.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.os.CountDownTimer
-import android.os.Handler
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.sdk.proverbsapp.R
